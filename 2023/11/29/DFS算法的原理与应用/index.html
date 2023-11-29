@@ -16,21 +16,21 @@
   <meta name="author" content="Nimisora">
   <meta name="keywords" content="">
   
-    <meta name="description" content="testtesthow to use markdown   12printf(&quot;hello world&quot;);printf(&quot;Goodbye&quot;);">
+    <meta name="description" content="深度优先搜索算法（Depth First Search，简称DFS）：一种用于遍历或搜索树或图的算法。 沿着树的深度遍历树的节点，尽可能深的搜索树的分支。当节点v的所在边都己被探寻过或者在搜寻时结点不满足条件，搜索将回溯到发现节点v的那条边的起始节点。整个进程反复进行直到所有节点都被访问为止。属于盲目搜索,最糟糕的情况算法时间复杂度为O(!n)。  一、基本原理 为求得某一问题的解，先选择某一可">
 <meta property="og:type" content="article">
-<meta property="og:title" content="post">
-<meta property="og:url" content="http://example.com/2023/11/29/post/index.html">
+<meta property="og:title" content="DFS算法的原理与应用">
+<meta property="og:url" content="http://example.com/2023/11/29/DFS%E7%AE%97%E6%B3%95%E7%9A%84%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/index.html">
 <meta property="og:site_name" content="Nimisora">
-<meta property="og:description" content="testtesthow to use markdown   12printf(&quot;hello world&quot;);printf(&quot;Goodbye&quot;);">
+<meta property="og:description" content="深度优先搜索算法（Depth First Search，简称DFS）：一种用于遍历或搜索树或图的算法。 沿着树的深度遍历树的节点，尽可能深的搜索树的分支。当节点v的所在边都己被探寻过或者在搜寻时结点不满足条件，搜索将回溯到发现节点v的那条边的起始节点。整个进程反复进行直到所有节点都被访问为止。属于盲目搜索,最糟糕的情况算法时间复杂度为O(!n)。  一、基本原理 为求得某一问题的解，先选择某一可">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-11-29T08:15:23.000Z">
-<meta property="article:modified_time" content="2023-11-29T10:18:26.722Z">
+<meta property="article:published_time" content="2023-11-29T10:33:03.000Z">
+<meta property="article:modified_time" content="2023-11-29T11:43:55.001Z">
 <meta property="article:author" content="Nimisora">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>post - Nimisora</title>
+  <title>DFS算法的原理与应用 - Nimisora</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="post"></span>
+            <span id="subtitle" data-typed-text="DFS算法的原理与应用"></span>
           
         </div>
 
@@ -207,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-11-29 16:15" pubdate>
-          2023年11月29日 下午
+        <time datetime="2023-11-29 18:33" pubdate>
+          2023年11月29日 晚上
         </time>
       </span>
     
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          85 字
+          1.5k 字
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          1 分钟
+          13 分钟
         
       </span>
     
@@ -267,15 +267,31 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">post</h1>
+            <h1 id="seo-header">DFS算法的原理与应用</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1><p>test<br>how to use markdown  </p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;hello world&quot;</span>);<br><span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Goodbye&quot;</span>);<br></code></pre></td></tr></table></figure>
-
-
+                <blockquote>
+<p>深度优先搜索算法（Depth First Search，简称DFS）：一种用于遍历或搜索树或图的算法。 沿着树的深度遍历树的节点，尽可能深的搜索树的分支。当节点v的所在边都己被探寻过或者在搜寻时结点不满足条件，搜索将回溯到发现节点v的那条边的起始节点。整个进程反复进行直到所有节点都被访问为止。属于盲目搜索,最糟糕的情况算法时间复杂度为O(!n)。</p>
+</blockquote>
+<h1 id="一、基本原理"><a href="#一、基本原理" class="headerlink" title="一、基本原理"></a>一、基本原理</h1><ol>
+<li>为求得某一问题的解，先选择某一可能情况向前探索；</li>
+<li>探索过程中，一旦发现原来的选择是错误的，就退一步重新选择，继续向前探索；</li>
+<li>如此反复进行，直至得到解或证明无解。</li>
+</ol>
+<h1 id="二、模板"><a href="#二、模板" class="headerlink" title="二、模板"></a>二、模板</h1><p>C模板:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">int</span> a[<span class="hljs-number">510</span>]; <span class="hljs-comment">//存储每次选出的数据</span><br><span class="hljs-type">int</span> book[<span class="hljs-number">510</span>];  <span class="hljs-comment">//标记是否被访问</span><br><span class="hljs-type">int</span> ans=<span class="hljs-number">0</span>;  <span class="hljs-comment">//记录符合条件的次数</span><br><br><span class="hljs-type">void</span> <span class="hljs-title function_">DFS</span><span class="hljs-params">(<span class="hljs-type">int</span> cur)</span>&#123;  <br>    <span class="hljs-keyword">if</span>(cur==k)&#123; <span class="hljs-comment">//k个数已经选完，可以进行输出等相关操作</span><br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;cur;i++)&#123;<br>            <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,a[i]);<br>        &#125;<br>        ans++;<br>        <span class="hljs-keyword">return</span> ;<br>    &#125;<br><br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;k;i++)&#123;   <span class="hljs-comment">//遍历n个数，并从中选择k个数</span><br>        <span class="hljs-keyword">if</span>(!book[i])&#123;   <span class="hljs-comment">//若没有被访问</span><br>            book[i]=<span class="hljs-number">1</span>;  <span class="hljs-comment">//标记为已被访问</span><br>            a[cur]=i;   <span class="hljs-comment">//选定本数，并加入数组</span><br>            DFS(cur+<span class="hljs-number">1</span>); <span class="hljs-comment">//递归，cur+1</span><br>            book[i]=<span class="hljs-number">0</span>;  <span class="hljs-comment">//释放，标记为未访问，方便下次引用</span><br>        &#125;<br>    &#125;   <br>&#125;<br></code></pre></td></tr></table></figure>
+<p>代码过于抽象（对于笔者），下引用例题以方便理解</p>
+<h1 id="三、例题"><a href="#三、例题" class="headerlink" title="三、例题"></a>三、例题</h1><h2 id="1-排列问题"><a href="#1-排列问题" class="headerlink" title="1.排列问题"></a>1.排列问题</h2><p>题目一:<br>设有n个整数的集合{1,2,…,n} 从中选出任意r个数进行排列，试列出所有排列 </p>
+<p>实现过程：  </p>
+<ol>
+<li>定义两个数组a[]、book[]，其中a保存每次的排列数据，book保存i这个数是否被访问；</li>
+<li>初始化相关数据；</li>
+<li>递归填数并判断第i个数是否合法<br> <strong>合法</strong>：填数，并判断是否已经到达环的终点。若到达终点，打印结果，否则，继续填下一个数；<br> <strong>不合法</strong>：选择下一种可能。</li>
+</ol>
+<p><strong>AC代码：</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;iostream&gt;</span></span><br><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-type">int</span> n,r,ans;    <span class="hljs-comment">//r个数进行排列，ans为排列个数</span><br><span class="hljs-type">int</span> book[<span class="hljs-number">510</span>];  <span class="hljs-comment">//标记是否被访问</span><br><span class="hljs-type">int</span> a[<span class="hljs-number">510</span>];   <span class="hljs-comment">//记录每次的排列数据</span><br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">DFS</span><span class="hljs-params">(<span class="hljs-type">int</span> cur)</span></span>&#123;  <span class="hljs-comment">//从集合中取r个数构成的排列</span><br>    <span class="hljs-keyword">if</span>(r==cur)&#123; <span class="hljs-comment">//已经取够r个数</span><br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;cur;i++)&#123; <span class="hljs-comment">//循环输出</span><br>            cout&lt;&lt;a[i]&lt;&lt;<span class="hljs-string">&#x27; &#x27;</span>;<br>        &#125;<br>        cout&lt;&lt;endl;<br>        ans++   <span class="hljs-comment">//数量加1</span><br>        <span class="hljs-keyword">return</span> ;<br>    &#125;<br>    <br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;n;i++)&#123;   <span class="hljs-comment">//保证循环不漏</span><br>        <span class="hljs-keyword">if</span>(!book[i])&#123;   <span class="hljs-comment">//若没访问过</span><br>        book[i]=<span class="hljs-number">1</span>;  <span class="hljs-comment">//标记已访问</span><br>        a[cur]=i;   <span class="hljs-comment">//i符合条件加入</span><br>        <span class="hljs-built_in">DFS</span>(cur+<span class="hljs-number">1</span>); <span class="hljs-comment">//寻找一个数字</span><br>        book[i]=<span class="hljs-number">0</span>;  <span class="hljs-comment">//回溯，清除标记</span><br>        &#125;<br>    &#125;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    cin&gt;&gt;n&gt;&gt;r;<br>    <span class="hljs-built_in">DFS</span>(<span class="hljs-number">0</span>);<br><br>    cout&lt;&lt;ans&lt;&lt;endl;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -293,8 +309,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>post</div>
-      <div>http://example.com/2023/11/29/post/</div>
+      <div>DFS算法的原理与应用</div>
+      <div>http://example.com/2023/11/29/DFS算法的原理与应用/</div>
     </div>
     <div class="license-meta">
       
@@ -338,18 +354,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/11/29/DFS%E7%AE%97%E6%B3%95%E7%9A%84%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/" title="DFS算法的原理与应用">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">DFS算法的原理与应用</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/11/21/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/11/29/post/" title="post">
+                        <span class="hidden-mobile">post</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
